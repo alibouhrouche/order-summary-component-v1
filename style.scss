@@ -1,0 +1,147 @@
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+$hover-color: hsl(245, 83%, 68%);
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: $pale-blue;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-position: top;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 800px) {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-size: 100% 25%;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  width: 100%;
+  img {
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 900;
+  color: $dark-blue;
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: $desaturated-blue;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.plan {
+  display: flex;
+  background-color: $very-pale-blue;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-left: 15px;
+}
+
+.plan-title {
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+.plan-price {
+  color: $desaturated-blue;
+}
+
+.change {
+  margin-left: auto;
+  &,&:link,&:visited {
+    color: $bright-blue;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  &:hover,&:active {
+    color: $hover-color;
+    text-decoration: none;
+  }
+}
+
+.confirm {
+  width: 100%;
+  padding: 15px;
+  background-color: $bright-blue;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px hsla(245, 75%, 52%, 0.5);
+  font-weight: 700;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: background-color .5s;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.cancel {
+  color: $desaturated-blue;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color .5s;
+  &:hover {
+    color: $dark-blue;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
