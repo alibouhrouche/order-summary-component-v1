@@ -48,20 +48,21 @@ main {
   border-radius: 15px 15px 0 0;
 }
 
-.title {
+.card-info__title {
   font-size: 24px;
   font-weight: 900;
   color: #1f2f56;
+  margin: 0;
 }
 
-.desc {
+.card-info__desc {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   color: #7280a7;
 }
 
-.content {
+.card-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +70,7 @@ main {
   text-align: center;
 }
 
-.plan {
+.card-plan {
   display: flex;
   background-color: #f5f7ff;
   padding: 20px;
@@ -78,36 +79,36 @@ main {
   align-items: center;
 }
 
-.plan-info {
+.card-plan__info {
   display: flex;
   flex-direction: column;
   gap: 3px;
   margin-left: 15px;
 }
 
-.plan-title {
+.card-plan__title {
   font-weight: 700;
   color: #1f2f56;
 }
 
-.plan-price {
+.card-plan__price {
   color: #7280a7;
 }
 
-.change {
+.card-plan__change {
   margin-left: auto;
 }
-.change, .change:link, .change:visited {
+.card-plan__change, .card-plan__change:link, .card-plan__change:visited {
   color: #3829e0;
   font-weight: 700;
   font-size: 14px;
 }
-.change:hover, .change:active {
+.card-plan__change:hover, .card-plan__change:active {
   color: #756af1;
   text-decoration: none;
 }
 
-.confirm {
+.card-confirm {
   width: 100%;
   padding: 15px;
   background-color: #3829e0;
@@ -119,17 +120,17 @@ main {
   cursor: pointer;
   transition: background-color 0.5s;
 }
-.confirm:hover {
+.card-confirm:hover {
   background-color: #756af1;
 }
 
-.cancel {
+.card-cancel {
   color: #7280a7;
   font-weight: 700;
   cursor: pointer;
   transition: color 0.5s;
 }
-.cancel:hover {
+.card-cancel:hover {
   color: #1f2f56;
 }
 
